@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Επιβεβαίωση Παραγγελίας</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="page5.css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 0px solid #e7e7e7;
+      background-color: #f3f3f3;
+    }
+
+    li {
+      float: left;
+      font-size: 20px;
+    }
+
+    li a {
+      color: #2e2eb8;
+      display: block;
+      text-align: center;
+      line-height: 10px;
+      padding: 20px 14px;
+      text-decoration: none;
+      font-family: Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    li a:hover:not(.active) {
+      background-color: lightgray;
+      color: #2e2eb8;
+    }
+
+    li.right {
+      float: right;
+      font-size: 15px;
+    }
+
+    li a.active {
+      color: white;
+      background-color: firebrick;
+      font-family: Georgia, Times, 'Times New Roman', serif;
+      font-size: 27px;
+    }
+
+    li a.act {
+      background-color: #2e2eb8;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a class="active">Hellenic Catering</a></li>
+    <li><a href="slide.html">Κεντρικό Μενού</a></li>
+    <li><a class="act" href="page6.html">Διαχείριση Παραγγελιών</a></li>
+    <li><a>Οι Αναφορές Μου</a></li>
+    <li class="right"><a href="page1.html">Αποσύνδεση</a></li>
+  </ul>
+  <div id="page">
+    <div class="title">
+      <h1>Επιβεβαίωση Παραγγελίας</h1>
+    </div>
+    <div class="paragraph">
+      <p>Η παραγγελία σας αποθηκεύτηκε επιτυχώς!</p>
+    </div>
+    <div class="container">
+      <img src="checkbox.png" alt="check" class="center">
+    </div>
+    <div class="but"></div>
+    <a href="page6.html" class="buttons">Προσθήκη Παραγγελίας</a>
+  </div>
+  <div class="logo"></div>
+  </div>
+</body>
+
+</html>

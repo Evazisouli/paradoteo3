@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Κεντρικό Μενού</title>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="cssPage1.css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 0px solid #e7e7e7;
+      background-color: #f3f3f3;
+    }
+
+    li {
+      float: left;
+      font-size: 20px;
+    }
+
+    li a {
+      display: block;
+      color: #2e2eb8;
+      text-align: center;
+      line-height: 10px;
+      padding: 20px 14px;
+      text-decoration: none;
+      font-family: Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    li a:hover:not(.active) {
+      background-color: lightgray;
+    }
+
+    li.right {
+      float: right;
+      font-size: 15px;
+    }
+
+    li a.active {
+      color: white;
+      background-color: firebrick;
+      font-family: Georgia, Times, 'Times New Roman', serif;
+      font-size: 27px;
+    }
+
+    li a.act {
+      background-color: #2e2eb8;
+      color: white;
+    }
+
+    body {
+      font-family: Georgia, Times, 'Times New Roman', serif;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: 70px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a class="active">Hellenic Catering</a></li>
+    <li><a class="act" href="slide.html">Κεντρικό Μενού</a></li>
+    <li><a href="page6.html">Διαχείριση Παραγγελιών</a></li>
+    <li><a>Οι Αναφορές Μου</a></li>
+    <li class="right"><a href="page1.html">Αποσύνδεση</a></li>
+  </ul>
+
+  <div class="title">
+    <h1>Hellenic Catering</h1>
+    <div class="cont">
+      <div class="info"> Η Hellenic Catering αποτελεί το βιομηχανικό βραχίονα του Ομίλου Goody’s-Everest, του Κλάδου
+        Εστίασης του του Ομίλου Vivartia.
+        Mε παρουσία πλέον των 40 ετών στην Ελληνική αγορά, η εταιρία διαθέτει 2 σύγχρονες μονάδες παραγωγής στην Αττική
+        και στη Θεσσαλονίκη, με εξειδίκευση
+        στην παραγωγή κρεατοσκευασμάτων, κατεψυγμένων και chilled γευμάτων, σαλατών & dressings, γλυκών και
+        αρτοσκευασμάτων.</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://helleniccatering.gr/sites/default/files/kreatoskevasmata_main_1.png" style="width: 100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://helleniccatering.gr/sites/default/files/mageireuto_main.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://helleniccatering.gr/sites/default/files/salates-dressing_main.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://helleniccatering.gr/sites/default/files/Cheesecake.jpg" style="width:100%">
+    </div>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="https://helleniccatering.gr/sites/default/files/kreatoskevasmata_main_1.png"
+          style="width:100%" onclick="currentSlide(1)" alt="Κρεατοσκευάσματα">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://helleniccatering.gr/sites/default/files/mageireuto_main.png"
+          style="width:100%" onclick="currentSlide(2)" alt="Μαγειρευτό Φαγητό">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://helleniccatering.gr/sites/default/files/salates-dressing_main.png"
+          style="width:100%" onclick="currentSlide(3)" alt="Σαλάτες & Dressings">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://helleniccatering.gr/sites/default/files/Cheesecake.jpg" style="width:100%"
+          onclick="currentSlide(4)" alt="Γλυκά και Αρτοζαχαροπλαστική">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+</body>
+
+</html>

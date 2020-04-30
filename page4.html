@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Συνολική Εικόνα Παραγγελίας</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="cssPage2.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 0px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+            font-size: 20px;
+        }
+
+        li a {
+            color: #2e2eb8;
+            display: block;
+            text-align: center;
+            line-height: 10px;
+            padding: 20px 14px;
+            text-decoration: none;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        li a:hover:not(.active) {
+            background-color: lightgray;
+            color: #2e2eb8;
+        }
+
+        li.right {
+            float: right;
+            font-size: 15px;
+        }
+
+        li a.active {
+            color: white;
+            background-color: firebrick;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: 27px;
+        }
+
+        li a.act {
+            background-color: #2e2eb8;
+            color: white;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #2e2eb8;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 3px;
+            text-align: center;
+            color: #2e2eb8;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+
+        th {
+            text-align: center;
+            color: #2e2eb8;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active">Hellenic Catering</a></li>
+        <li><a href="slide.html">Κεντρικό Μενού</a></li>
+        <li><a class="act" href="page6.html">Διαχείριση Παραγγελιών</a></li>
+        <li><a>Οι Αναφορές Μου</a></li>
+        <li class="right"><a href="page1.html">Αποσύνδεση</a></li>
+    </ul>
+    <div id="all">
+        <div class="title">
+            <h1>Ολοκλήρωση Παραγγελίας</h1>
+            <div class="number">
+                <p>Κωδικός Παραγγελίας: 3793473</p>
+            </div>
+        </div>
+        <table style="width:50%" ; align="center">
+            <tr>
+                <th> Κωδικός προϊόντος</th>
+                <th> Περιγραφή προϊόντος</th>
+                <th> Ποσότητα σε κιβώτια</th>
+            </tr>
+            <tr>
+                <td> 520085</td>
+                <td> ΜΠΙΦΤΕΚΙ ΣΠΙΤΙΚΟ 130 gr Κ/Ψ</td>
+                <td> 2 </td>
+            </tr>
+            <tr>
+                <td> 407208</td>
+                <td> ΚΟΤΟΠΟΥΛΟ ΣΤΗΘΟΣ ΦΙΛΕΤΟ ΣΕ ΦΕΤΕΣ Κ/Ψ</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> 700034 </td>
+                <td> HAMBURGER SAUCE </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> 911728 </td>
+                <td> ΠΟΡΤΟΚΑΛΟΠΙΤΑ 2,2kg Κ/Ψ (ΚΟΜΜΕΝΟ 12τεμ) </td>
+                <td> 5 </td>
+            </tr>
+            <tr>
+                <td> 607307 </td>
+                <td> ΠΑΤΑΤΑ ΦΟΥΡΝΟΥ ΣΤΡΟΓΓΥΛΗ ΜΕ ΕΛΑΙΟΛΑΔΟ - ΜΟΥΣΤΑΡΔΑ 1,6kg Κ/Ψ </td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td> 406426 </td>
+                <td> ΧΩΡΙΑΤΙΚΗ ΣΠΑΝΑΚΙ ΤΥΡΙ ΣΤΡΟΓΓΥΛΗ 2,2Κg Κ/Ψ</td>
+                <td> 5 </td>
+            </tr>
+            <tr>
+                <td> 608150 </td>
+                <td> ΠΑΣΤΙΤΣΙΟ CLASSIC 2,5kg Κ/Ψ</td>
+                <td> 4 </td>
+            </tr>
+        </table>
+        <div class="panos">
+            <a href="page3.html" class="btns">Επεξεργασία</a>
+            <a href="page5.html" class="btn">Υποβολή</a>
+        </div>
+        <div class="logo"></div>
+    </div>
+</body>
+</html>
